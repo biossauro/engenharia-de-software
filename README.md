@@ -1,11 +1,40 @@
-# Engenharia de Software
+# C11 - Trabalho Prático 01
 
-## Apresentação Pessoal
+- O trabalho prático deverá ser feito em dupla.
+- A realização da entrega deverá ser feita via Teams, através da tarefa adicionada à equipe.
+- Atente-se ao prazo de entrega. Não será possível realizar a entrega após o prazo previsto.
+- Apenas esse arquivo (`.ipynb`) com a resolução deverá ser entregue. Entregas em formato `.zip` serão penalizadas.
+- Apenas 1 aluno da dupla deverá fazer a entrega e colocar o nome da dupla.
 
-Olá! Meu nome é Fabio e comecei a cursar Engenharia de Software no Instituto Nacional de Telecomunicações (Inatel) em 2019, com conclusão prevista para o final de 2023 e início de 2024. Porém, minha principal área de interesse é aquela que estudo à parte. Almejo trabalhar como _game designer_, aspiração essa que tenho desde que me conheço por gente e, portanto, não consigo me ver ou me imaginar fazendo outra coisa.
+## Problema de Buscas
 
-## Introdução ao Repositório
+Considere um tabuleiro quadrado onde cada bloco pode estar limpo ("o") ou sujo ("i").
+Seu trabalho é mover o aspirador "x" pelo tabuleiro a fim de limpar todos os blocos sujos.
 
-Neste repositório estão todos os principais trabalhos que fiz em minha trajetória universitária, com algumas exceções, dignas de repositórios separados. Cada _branch_ contém um trabalho específico feito para uma única disciplina específica. Isso foi feito para que no meu GitHub apenas os projetos que considero importantes para minha carreira e/ou úteis para algum fim recebam maior destaque e visibilidade.
+### Instruções
 
-**Obs.:** Originalmente, esses trabalhos foram criados dentro de seus próprios repositórios e, portanto, podem não estar totalmente funcionais, servindo mais como prova histórica de que, de fato, foram feitos em algum momento por mim.
+- Sempre que o aspirador deixa um bloco, esse pode ser considerado como limpo.
+- O objetivo é deixar todos espaços limpos, ou seja, o tabuleiro preenchido apenas com 'o' e com o aspirador 'x'.
+- Para responder às questões a, b, c, d basta completar os códigos.
+
+<img src = "images/problema.png" width = 150>
+
+### Exemplo de Buscas
+
+<img src = "images/buscas.png" width = 1000>
+
+## Questões
+
+1. Implemente a Função de Busca em Largura (BFS).
+
+2. Implemente a Função de Busca em Profundidade (DFS).
+
+3. Implemente a Função de Busca Gulosa com a seguinte heurística:
+
+   `h(n) = nº de espaços com sujeira "i" (Minimizar a quantidade de estados com sujeira)`.
+
+4. Execute as 3 Buscas com o Tabuleiro Inicial Fornecido e Compare:
+
+   - o tempo de execução de cada busca;
+   - a quantidade de estados buscados (inclusive o estado objetivo);
+   - se a solução foi encontrada ou não.

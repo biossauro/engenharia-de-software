@@ -1,0 +1,32 @@
+{
+  "name": "cypress-ui",
+  "version": "1.0.0",
+  "description": "Teste de UI com Cypress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "anydice-test": "./node_modules/.bin/cypress open",
+    "anydice-report": "./node_modules/.bin/cypress run --spec 'cypress/integration/test-anydice/**/'",
+    "anydice-merge": "mochawesome-merge 'cypress/report/*.json' > mochawesome.json",
+    "anydice-html": "marge mochawesome.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bio353/cypress-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bio353/cypress-ui/issues"
+  },
+  "homepage": "https://github.com/bio353/cypress-ui#readme",
+  "dependencies": {
+    "cypress": "^8.6.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^6.3.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}

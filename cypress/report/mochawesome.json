@@ -1,0 +1,219 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-28T20:18:10.615Z",
+    "end": "2021-10-28T20:18:40.561Z",
+    "duration": 29946,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d6d3006d-ebea-4b3a-aca2-3556865f45e3",
+      "title": "",
+      "fullFile": "cypress/integration/test-anydice/test-anydice.js",
+      "file": "cypress/integration/test-anydice/test-anydice.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e0799ffb-85fa-47d5-bae7-f9be982ba14f",
+          "title": "SUIT de Teste: testando as funcionalidades do site anydice.com",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cenário de Teste: Rolando 1d20 e Somando 5",
+              "fullTitle": "SUIT de Teste: testando as funcionalidades do site anydice.com Cenário de Teste: Rolando 1d20 e Somando 5",
+              "timedOut": null,
+              "duration": 6230,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.accessAnyDice();\ncy.inputDice(\"output 1d20 + 5\");\ncy.checkText(\":nth-child(20) > :nth-child(1)\", \"25\");",
+              "err": {},
+              "uuid": "7b363a70-0fdb-47fc-817b-ed7c299e1916",
+              "parentUUID": "e0799ffb-85fa-47d5-bae7-f9be982ba14f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenário de Teste: Acessando a Documentação",
+              "fullTitle": "SUIT de Teste: testando as funcionalidades do site anydice.com Cenário de Teste: Acessando a Documentação",
+              "timedOut": null,
+              "duration": 2657,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.accessAnyDice();\ncy.seeDocumentation();\ncy.clickAndWait(\"#documentationPage > :nth-child(2)\");\ncy.scrollTo(\"bottom\");\ncy.checkText(\"#documentationPage > :nth-child(20)\", \"Functions\");",
+              "err": {},
+              "uuid": "deab131a-fd5c-4ac5-8360-4ce65954520a",
+              "parentUUID": "e0799ffb-85fa-47d5-bae7-f9be982ba14f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenário de Teste: Gerando Erro de Sintaxe",
+              "fullTitle": "SUIT de Teste: testando as funcionalidades do site anydice.com Cenário de Teste: Gerando Erro de Sintaxe",
+              "timedOut": null,
+              "duration": 2241,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.accessAnyDice();\ncy.inputDice(\"#codeInput\", `output 1d20 as \"ataque de espada longa\"`);\ncy.checkText(\"#errorDisplay > h3\", \"syntax error\");",
+              "err": {},
+              "uuid": "a1709cc9-0f24-43bb-91e8-8c6e8fe7c564",
+              "parentUUID": "e0799ffb-85fa-47d5-bae7-f9be982ba14f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenário de Teste: Usando Funções",
+              "fullTitle": "SUIT de Teste: testando as funcionalidades do site anydice.com Cenário de Teste: Usando Funções",
+              "timedOut": null,
+              "duration": 4642,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.accessAnyDice();\ncy.inputDice(testFunction);\ncy.scrollTo(\"bottom\");\ncy.checkText(\":nth-child(10) > caption\", \"10d\");",
+              "err": {},
+              "uuid": "e25f1802-68f1-416e-9cda-6aaec9f10479",
+              "parentUUID": "e0799ffb-85fa-47d5-bae7-f9be982ba14f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenário de Teste: Rolando Dados Arbitrários",
+              "fullTitle": "SUIT de Teste: testando as funcionalidades do site anydice.com Cenário de Teste: Rolando Dados Arbitrários",
+              "timedOut": null,
+              "duration": 2574,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.accessAnyDice();\ncy.inputDice(`output d{{}-1..1} named \"Fudge die\"`);\ncy.checkText(\"caption\", \"Fudge die\");",
+              "err": {},
+              "uuid": "16bd88f7-c5a2-4004-85a7-1af4684fba39",
+              "parentUUID": "e0799ffb-85fa-47d5-bae7-f9be982ba14f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenário de Teste: Checando Resultados",
+              "fullTitle": "SUIT de Teste: testando as funcionalidades do site anydice.com Cenário de Teste: Checando Resultados",
+              "timedOut": null,
+              "duration": 3652,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.accessAnyDice();\ncy.inputDice(`output 2d6 + 3 named \"espadas curtas\"`);\ncy.clickAndWait(\"#exportDisplay-selector\");\ncy.checkText(\"#exportDisplay > textarea\", \"espadas curtas\");",
+              "err": {},
+              "uuid": "bd7b9dcb-4f60-4662-9210-fc5a0cf42f32",
+              "parentUUID": "e0799ffb-85fa-47d5-bae7-f9be982ba14f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenário de Teste: Rolando Dados",
+              "fullTitle": "SUIT de Teste: testando as funcionalidades do site anydice.com Cenário de Teste: Rolando Dados",
+              "timedOut": null,
+              "duration": 4760,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.accessAnyDice();\ncy.inputDice(`output 1d8 + 13 named \"arco longo\"`);\ncy.clickAndWait(\"#rollerDisplay-selector\");\ncy.clickAndWait(\"#rollerButton\");\ncy.checkText(\"#rollerOutput\", \"arco longo\");",
+              "err": {},
+              "uuid": "62681865-afb5-4147-88a3-89e65ef96026",
+              "parentUUID": "e0799ffb-85fa-47d5-bae7-f9be982ba14f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7b363a70-0fdb-47fc-817b-ed7c299e1916",
+            "deab131a-fd5c-4ac5-8360-4ce65954520a",
+            "a1709cc9-0f24-43bb-91e8-8c6e8fe7c564",
+            "e25f1802-68f1-416e-9cda-6aaec9f10479",
+            "16bd88f7-c5a2-4004-85a7-1af4684fba39",
+            "bd7b9dcb-4f60-4662-9210-fc5a0cf42f32",
+            "62681865-afb5-4147-88a3-89e65ef96026"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 26756,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

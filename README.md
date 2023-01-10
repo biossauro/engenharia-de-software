@@ -27,7 +27,7 @@ Caso haja dúvidas, segue a explicação dos vídeos abaixo:
 
 Após ter instalado [Python3](https://www.python.org/downloads/), basta executar os seguintes comandos no terminal, após abrir a pasta do projeto:
 
-```
+```cmd
     python -m venv env
     env\Scripts\activate
     pip install --upgrade -r requirements.txt

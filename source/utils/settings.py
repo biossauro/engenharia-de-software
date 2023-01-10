@@ -1,0 +1,1 @@
+RESOLUTION = '320x180'

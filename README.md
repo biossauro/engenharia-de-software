@@ -1,11 +1,35 @@
-# Engenharia de Software
+# AG002 - Engenharia de Computação e Software
 
-## Apresentação Pessoal
+## 1. Introdução
 
-Olá! Meu nome é Fabio e comecei a cursar Engenharia de Software no Instituto Nacional de Telecomunicações (Inatel) em 2019, com conclusão prevista para o final de 2023 e início de 2024. Porém, minha principal área de interesse é aquela que estudo à parte. Almejo trabalhar como _game designer_, aspiração essa que tenho desde que me conheço por gente e, portanto, não consigo me ver ou me imaginar fazendo outra coisa.
+As instruções para a realização do trabalho podem ser encontradas [aqui](INSTRUCTIONS.md).
 
-## Introdução ao Repositório
+## 2. Funcionamento
 
-Neste repositório estão todos os principais trabalhos que fiz em minha trajetória universitária, com algumas exceções, dignas de repositórios separados. Cada _branch_ contém um trabalho específico feito para uma única disciplina específica. Isso foi feito para que no meu GitHub apenas os projetos que considero importantes para minha carreira e/ou úteis para algum fim recebam maior destaque e visibilidade.
+O trabalho possui uma interface simples, conforme demonstrado abaixo.
+Nela, é possível adicionar os valores clicando neles em uma ordem específica, simulando um jogo da velha.
 
-**Obs.:** Originalmente, esses trabalhos foram criados dentro de seus próprios repositórios e, portanto, podem não estar totalmente funcionais, servindo mais como prova histórica de que, de fato, foram feitos em algum momento por mim.
+![Tic-Tac-Toe](assets/example.png)
+
+As opções encontradas são: **_Predict_**, **_Reset_**, **_Quit_**, **_Data_** e **_Performance_**.
+
+- **_Predict_:** Realiza uma predição do resultado.
+- **_Reset_:** Limpa os valores adicionados.
+- **_Quit_:** Fecha a aplicação.
+- **_Data_:** Mostra dados do _dataset_.
+- **_Performance_:** Mostra performance do modelo de _machine learning_.
+
+Caso haja dúvidas, segue a explicação dos vídeos abaixo:
+
+[![Vídeo](https://img.youtube.com/vi/WD9g4OF5agY/hqdefault.jpg)](https://youtu.be/WD9g4OF5agY)
+
+## 3. Instalação
+
+Após ter instalado [Python3](https://www.python.org/downloads/), basta executar os seguintes comandos no terminal, após abrir a pasta do projeto:
+
+```
+    python -m venv env
+    env\Scripts\activate
+    pip install --upgrade -r requirements.txt
+    python main.py
+```

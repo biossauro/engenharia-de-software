@@ -1,11 +1,44 @@
-# Engenharia de Software
+# Exercício TDD - Calculadora
 
-## Apresentação Pessoal
+[![Calculator App](https://github.com/bio353/exercicio-github-actions/actions/workflows/python-app.yml/badge.svg)](https://github.com/bio353/exercicio-github-actions/actions/workflows/python-app.yml)
 
-Olá! Meu nome é Fabio e comecei a cursar Engenharia de Software no Instituto Nacional de Telecomunicações (Inatel) em 2019, com conclusão prevista para o final de 2023 e início de 2024. Porém, minha principal área de interesse é aquela que estudo à parte. Almejo trabalhar como _game designer_, aspiração essa que tenho desde que me conheço por gente e, portanto, não consigo me ver ou me imaginar fazendo outra coisa.
+## Explicação da Atividade
 
-## Introdução ao Repositório
+Utilize os padrões 1, 2, 3 e 4 para construir uma calculadora. Instancie a classe uma só vez e crie pelo menos 2 cenário negativos (padrão 3).
 
-Neste repositório estão todos os principais trabalhos que fiz em minha trajetória universitária, com algumas exceções, dignas de repositórios separados. Cada _branch_ contém um trabalho específico feito para uma única disciplina específica. Isso foi feito para que no meu GitHub apenas os projetos que considero importantes para minha carreira e/ou úteis para algum fim recebam maior destaque e visibilidade.
+## Execução dos Testes
 
-**Obs.:** Originalmente, esses trabalhos foram criados dentro de seus próprios repositórios e, portanto, podem não estar totalmente funcionais, servindo mais como prova histórica de que, de fato, foram feitos em algum momento por mim.
+Com o [Python](https://www.python.org/downloads/) instalado, execute os seguintes comandos no _prompt_ de comando de sua preferência:
+
+```cmd
+python -m venv env
+env\Scripts\activate
+pip install -r requirements.txt
+python -m tests
+```
+
+## Execução do Programa
+
+Com o [Python](https://www.python.org/downloads/) instalado, execute os seguintes comandos no _prompt_ de comando de sua preferência:
+
+```cmd
+python -m venv env
+env\Scripts\activate
+pip install -r requirements.txt
+python main.py
+```
+
+**Obs.:** Não é necessário criar outra `venv` nem instalar as dependências novamente caso isso já tenha sido feito.
+
+## Build (Geração de Arquivo Executável)
+
+Com o [Python](https://www.python.org/downloads/) instalado, execute os seguintes comandos no _prompt_ de comando de sua preferência:
+
+```cmd
+python -m venv env
+env\Scripts\activate
+pip install -r requirements.txt
+python setup.py build
+```
+
+**Obs.:** Não é necessário criar outra `venv` nem instalar as dependências novamente caso isso já tenha sido feito.

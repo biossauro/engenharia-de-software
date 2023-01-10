@@ -8,4 +8,4 @@ Olá! Meu nome é Fabio e comecei a cursar Engenharia de Software no Instituto N
 
 Neste repositório estão todos os principais trabalhos que fiz em minha trajetória universitária, com algumas exceções, dignas de repositórios separados. Cada _branch_ contém um trabalho específico feito para uma única disciplina específica. Isso foi feito para que no meu GitHub apenas os projetos que considero importantes para minha carreira e/ou úteis para algum fim recebam maior destaque e visibilidade.
 
-Obs.: Originalmente, esses trabalhos foram criados dentro de seus próprios repositórios e, portanto, podem não estar totalmente funcionais, servindo mais como prova histórica de que, de fato, foram feitos em algum momento por mim.
+**Obs.:** Originalmente, esses trabalhos foram criados dentro de seus próprios repositórios e, portanto, podem não estar totalmente funcionais, servindo mais como prova histórica de que, de fato, foram feitos em algum momento por mim.

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Título </title>
+
+    <style>
+        .parent {
+            border: 6px solid gray;
+            width: 700px;
+            height: 500px;
+            position: relative;
+        }
+
+        .childBase {
+            background: red;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+
+        .child1 {
+            top: 100px;
+            left: 50px;
+        }
+
+        .child2 {
+            bottom: 100px;
+            right: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="parent">
+        <h1>
+            Div Pai
+        </h1>
+
+        <div class="child child1">
+            <h2>
+                Div filha 1
+            </h2>
+        </div>
+
+        <div class="child child2">
+            <h2>
+                Div filha 2
+            </h2>
+        </div>
+    </div>
+
+</body>
+
+</html>

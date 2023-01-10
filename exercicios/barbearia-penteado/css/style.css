@@ -1,0 +1,44 @@
+em b {
+    color: red;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.inicio {
+    background: gray;
+}
+
+.banner {
+    height: 550px;
+    width: 100%;
+}
+
+.missao {
+    font-size: 20px;
+}
+
+.propaganda {
+    background: white;
+}
+
+
+.opcao {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.rodape {
+    width: 50%;
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.stack_test.TestStack-20221009213317" tests="5" file="tests/stack_test.py" time="0.008" timestamp="2022-10-09T21:33:17" failures="0" errors="0" skipped="0">
+	<testcase classname="tests.stack_test.TestStack" name="test_is_empty" time="0.006" timestamp="2022-10-09T21:33:17" file="tests\stack_test.py" line="9"/>
+	<testcase classname="tests.stack_test.TestStack" name="test_peek" time="0.001" timestamp="2022-10-09T21:33:17" file="tests\stack_test.py" line="21"/>
+	<testcase classname="tests.stack_test.TestStack" name="test_pop" time="0.001" timestamp="2022-10-09T21:33:17" file="tests\stack_test.py" line="16"/>
+	<testcase classname="tests.stack_test.TestStack" name="test_push" time="0.000" timestamp="2022-10-09T21:33:17" file="tests\stack_test.py" line="12"/>
+	<testcase classname="tests.stack_test.TestStack" name="test_size" time="0.000" timestamp="2022-10-09T21:33:17" file="tests\stack_test.py" line="26"/>
+</testsuite>

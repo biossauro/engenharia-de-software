@@ -1,0 +1,8 @@
+# Python venv
+env/
+
+# VS Code
+.vscode/
+
+# Python
+__pycache__/

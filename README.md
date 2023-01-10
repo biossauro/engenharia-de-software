@@ -1,11 +1,46 @@
-# Engenharia de Software
+# Seminário Testes Unitários - unittest
 
-## Apresentação Pessoal
+<p align="left">
+  <img height="256" src="assets/unknown.png" />
+</p>
 
-Olá! Meu nome é Fabio e comecei a cursar Engenharia de Software no Instituto Nacional de Telecomunicações (Inatel) em 2019, com conclusão prevista para o final de 2023 e início de 2024. Porém, minha principal área de interesse é aquela que estudo à parte. Almejo trabalhar como _game designer_, aspiração essa que tenho desde que me conheço por gente e, portanto, não consigo me ver ou me imaginar fazendo outra coisa.
+![Testes com unittest.](assets/imagem.PNG)
 
-## Introdução ao Repositório
+## Criando Ambiente Virtual (venv)
 
-Neste repositório estão todos os principais trabalhos que fiz em minha trajetória universitária, com algumas exceções, dignas de repositórios separados. Cada _branch_ contém um trabalho específico feito para uma única disciplina específica. Isso foi feito para que no meu GitHub apenas os projetos que considero importantes para minha carreira e/ou úteis para algum fim recebam maior destaque e visibilidade.
+É conveniente criamos um ambiente virtual para executar o projeto. Assim, não precisamos instalar nossas dependências globalmente. Para fazermos isso, execute em um terminal de comando **PowerShell**, por exemplo, os seguintes comandos:
 
-**Obs.:** Originalmente, esses trabalhos foram criados dentro de seus próprios repositórios e, portanto, podem não estar totalmente funcionais, servindo mais como prova histórica de que, de fato, foram feitos em algum momento por mim.
+```ps1
+python -m venv env
+python\Scripts\activate
+```
+
+Para executar os comandos em outros terminais de comando, pode haver algumas diferenças de sintaxe. No _prompt_ de comando padrão do Windows, entretanto, estes comandos também funcionam.
+
+## Instalando Dependências
+
+Em **Python**, nossas dependências ficam localizadas em um arquivo `requirements.txt`. Para instalá-las, ainda no mesmo terminal, execute:
+
+```ps1
+pip install -r requirements.txt
+```
+
+## Execução dos Testes
+
+Desde a versão 2.1 do **Python**, o **unittest** está incluso. Por isso, para executar os testes deste projeto, basta executar os seguintes comandos em um terminal **PowerShell**:
+
+```ps1
+python -m venv env
+python\Scripts\activate
+python -m unittest discover -v
+```
+
+## Geração do Relatório
+
+Estamos utilizando uma dependência externa (**xmlrunner**) para criar relatórios de testes. Para gerarmos um relatório, devemos executar:
+
+```ps1
+python -m tests
+```
+
+Este comando executará o arquivo `__main__.py` dentro do _package_ `tests`. Lá estão as instruções para geração do relatório.
